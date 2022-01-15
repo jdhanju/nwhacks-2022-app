@@ -2,6 +2,8 @@
 
 export default function Header() {
     return(
-        <h1> Chad Vision</h1>
+        <div className="pb-5">
+            <text className="text-2xl font-semibold border-b-2">CHADvision 😎</text>
+        </div>
     );
 }
