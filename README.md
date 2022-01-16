@@ -45,7 +45,6 @@ The reVision application has four major components that allow the application to
 
 - ### Browser Extension
     - https://github.com/iflinda/nwPlusExtension
-    - The extension is downloadable from the packages in the repository.
     - The Browser Extension listens to the Socket Server and accepts an object that contains the ID (roomId) and text (content). After receiving an ID match, the content is shown as text in the extension; thus, allowing for users to copy and paste the text.
     - _Technologies: React, TypeScript, Webpack.js, Tailwind CSS, ESLint, and Prettier_
 
