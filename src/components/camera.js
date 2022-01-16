@@ -40,7 +40,9 @@ export default function Camera() {
             {   displayImagine !== "" ?
                 //display the imagine and buttons
                 <div>
-                    <img id="image" src={displayImagine} alt="no image selected..."  width="500" height="600"/>
+                    <div className="h-300 w-400">
+                        <img id="image" src={displayImagine} alt="no image selected..."  width="300" height="400"/>
+                    </div>
 
                     <br />
                     <br />

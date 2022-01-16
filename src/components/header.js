@@ -3,7 +3,7 @@
 export default function Header() {
     return(
         <div className="pb-5">
-            <text className="text-2xl font-semibold border-b-2">CHADvision 😎</text>
+            <text className="text-4xl font-semibold border-b-2">reVision</text>
         </div>
     );
 }
