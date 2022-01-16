@@ -36,7 +36,8 @@ export default function postImage(imageURL, setloader){
         xhr.onload = function() {
             let data = JSON.parse(this.responseText);
             console.log(data);
-            setloader();
+            //setting the loading wheel state to false
+            setloader(false);
         }
 
         xhr.send(JSON.stringify(serverData));

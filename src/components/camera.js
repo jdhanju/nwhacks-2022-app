@@ -55,7 +55,7 @@ export default function Camera() {
                     <br />
                     <br />
                     
-                    { toggle !== "" ?
+                    { toggle !== "" &&  loader === false ?
                         //if the text/code toggle isn't clicked then disable the submit button
                         <Button variant="text" onClick={() => {
                             switchLoader();
