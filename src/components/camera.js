@@ -10,11 +10,16 @@ export default function Camera() {
 
     //hooks
     const [displayImagine, setDisplayImagine] = useState("");
-    const [alignment, setAlignment] = useState("");
+    const [toggle, setToggle] = useState("");
+    const [loader, setloader] = useState(false);
 
 
     const handleToggleButton = (event, newAlignment) =>{
-        setAlignment(newAlignment);
+        setToggle(newAlignment);
+    }
+
+    const switchLoader = () => {
+        setloader(!loader);
     }
 
     return(
@@ -40,19 +45,37 @@ export default function Camera() {
                     <br />
                     <br />
 
-                    <ToggleButtonGroup color="primary" exclusive value={alignment} onChange={handleToggleButton}>
+                    <ToggleButtonGroup color="primary" exclusive value={toggle} onChange={handleToggleButton}>
                         <ToggleButton value="text">Text</ToggleButton>
                         <ToggleButton value="code">Code</ToggleButton>
                     </ToggleButtonGroup>
                     
                     <br />
                     <br />
+                    
+                    { toggle !== "" ?
+                        //if the text/code toggle isn't clicked then disable the submit button
+                        <Button variant="text" onClick={() => {
+                            //switchLoader();
+                            postImage(displayImagine);
+                        }
+                    }>Submit</Button>
 
-                    <Button variant="text" onClick={() => postImage(displayImagine)}>Submit</Button>
+                        : <Button disabled variant="text" >Submit</Button>
+                    } 
                 </div>
                 //don't display anything
                 : null
             }
+            
+            <br />
+
+            { loader ? 
+                <div class=" flex justify-center items-center">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-400"></div>
+              </div>
+            : null}
+
         </div>
     );
 }
