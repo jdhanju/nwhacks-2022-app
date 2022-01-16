@@ -4,6 +4,7 @@ import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Button from '@mui/material/Button';
+import postImage from '../requests/requests'
 
 export default function Camera() {
 
@@ -47,7 +48,7 @@ export default function Camera() {
                     <br />
                     <br />
 
-                    <Button variant="text">Submit</Button>
+                    <Button variant="text" onClick={() => postImage(displayImagine)}>Submit</Button>
                 </div>
                 //don't display anything
                 : null
