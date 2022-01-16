@@ -1,10 +1,12 @@
 //camera.js is a component that handles everything related to the camera function
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Button from '@mui/material/Button';
-import postImage from '../requests/requests'
+import postImage from '../requests/requests';
+import TextField from '@mui/material/TextField';
+import { set } from 'stylis';
 
 export default function Camera() {
 
@@ -12,6 +14,9 @@ export default function Camera() {
     const [displayImagine, setDisplayImagine] = useState("");
     const [toggle, setToggle] = useState("");
     const [loader, setloader] = useState(false);
+    const [id, setID] = useState(false);
+
+    var input;
 
 
     const handleToggleButton = (event, newAlignment) =>{
@@ -20,6 +25,10 @@ export default function Camera() {
 
     const switchLoader = () => {
         setloader(!loader);
+    }
+
+    const handleIdInput = (e) => {
+        input = e.value;
     }
 
     return(
@@ -40,8 +49,8 @@ export default function Camera() {
             {   displayImagine !== "" ?
                 //display the imagine and buttons
                 <div>
-                    <div className="h-300 w-400">
-                        <img id="image" src={displayImagine} alt="no image selected..."  width="300" height="400"/>
+                    <div className="h-250 w-350">
+                        <img id="image" src={displayImagine} alt="no image selected..."  width="250" height="350"/>
                     </div>
 
                     <br />
@@ -55,15 +64,21 @@ export default function Camera() {
                     <br />
                     <br />
                     
+                        <TextField id="userID" color="primary" label="ID" variant="standard" onChange={(e) => handleIdInput(e.target)}/>
+
+                    <br />
+                    <br />
+                    
                     { toggle !== "" &&  loader === false ?
                         //if the text/code toggle isn't clicked then disable the submit button
                         <Button variant="text" onClick={() => {
                             switchLoader();
+                            setID(input);
                             postImage(displayImagine, setloader);
                         }
                     }>Submit</Button>
 
-                        : <Button disabled variant="text" >Submit</Button>
+                        : <Button disabled variant="text">Submit</Button>
                     } 
                 </div>
                 //don't display anything
