@@ -7,7 +7,7 @@ Figma: https://www.figma.com/file/Fpgz2H8knWSpZpsYdZ0m80/reVision-Prototype?node
 
 Imagine taking a picture of your notes or textbook and having that image available on your computer as typed text. It may sound too good to be true, but reVision can do exactly that.
 
-**reVision** is the ultimate note-taking application, and don't just take our word for it. McGill (https://www.mcgill.ca/oss/article/technology-general-science/pen-and-paper-versus-laptop-there-clear-winner-note-taking-olympics) mentions that when it comes down to comprehending concepts, users who used a pen to write down information generally performed better than their keyboard wielding counterparts. 
+**reVision** is the ultimate note-taking application, and don't just take our word for it. McGill (https://www.mcgill.ca/oss/article/technology-general-science/pen-and-paper-versus-laptop-there-clear-winner-note-taking-olympics) mentions that when it comes down to comprehending concepts, users who used a pen to write down information generally performed better than their keyboard-wielding counterparts. 
 
 The BBC (https://www.bbc.com/future/article/20191122-when-the-best-way-to-take-notes-is-by-hand) has also commented on how students who handwrite their notes have more engagement in the information that they listen to in a lecture.
 
