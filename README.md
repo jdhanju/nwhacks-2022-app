@@ -16,7 +16,7 @@ The BBC (https://www.bbc.com/future/article/20191122-when-the-best-way-to-take-n
 As a student, we are attached to our digital devices whether that be our phones, tablets, or laptops. It also makes sense that we want all of our notes and resources in one convenient location.
 
 **reVision** simplifies this process through a series of simple steps.
-1. Visit the website: 
+1. Visit the website: https://nwhacks-2022-app.vercel.app/
 2. Take a picture or upload a picture of the note(s) or textbook page that you want to transcribe.
 3. Choose if the picture is of text or code.
 4. Generate an ID through the reVision extension to connect the web application.
