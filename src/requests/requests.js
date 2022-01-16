@@ -16,7 +16,7 @@ function getBase64(imageURL, callback){
     return imageString;
 }
 
-export default function postImage(imageURL){
+export default function postImage(imageURL, setloader){
     console.log(imageURL);
 
     getBase64(imageURL, function(dataUrl) {
@@ -36,6 +36,7 @@ export default function postImage(imageURL){
         xhr.onload = function() {
             let data = JSON.parse(this.responseText);
             console.log(data);
+            setloader();
         }
 
         xhr.send(JSON.stringify(serverData));

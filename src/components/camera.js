@@ -58,8 +58,8 @@ export default function Camera() {
                     { toggle !== "" ?
                         //if the text/code toggle isn't clicked then disable the submit button
                         <Button variant="text" onClick={() => {
-                            //switchLoader();
-                            postImage(displayImagine);
+                            switchLoader();
+                            postImage(displayImagine, setloader);
                         }
                     }>Submit</Button>
 
