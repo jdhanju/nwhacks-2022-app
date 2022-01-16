@@ -27,7 +27,7 @@ export default function postImage(imageURL, setloader, roomId, toggle){
 
         //build JSON
         let serverData = {
-            "code": toggle === "code"? "code" : false,
+            "code": toggle === true? "code" : false,
             "image" : imageInBase64,
             "ext": "png"
         }
