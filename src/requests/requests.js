@@ -31,7 +31,7 @@ export default function postImage(imageURL, setloader){
 
         //make post call to server
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:8080/api/annotate", true);
+        xhr.open("POST", "https://text-recognition-api-v2.herokuapp.com/api/annotate", true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onload = function() {
             let data = JSON.parse(this.responseText);
