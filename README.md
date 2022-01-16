@@ -61,7 +61,7 @@ We hope you enjoy the reVision.
 
 ## Future Goals
 
-reVision has a lot of potentials, and we think it's a great tool for students and adults looking to improve their notetaking skills. Not only is it a great notetaking tool, but it allows multiple users to take notes together in a collaborative environment through the use of the ID (roomId). 
+reVision has a lot of potentials, and we think it's a great tool for students and adults looking to improve their note-taking skills. Not only is it a great note-taking tool, but it allows multiple users to take notes together in a collaborative environment through the use of the ID (roomId). 
 
 Ideally, we would like to eventually make it easier for different people to collaborate by allowing for multiple transcribed text uploads to be stored for a better user experience.
 
