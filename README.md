@@ -51,7 +51,7 @@ The reVision application has four major components that allow the application to
 
 ## Difficulties Making the Application & What We Learned
 
-Since there are so many moving parts in the reVision application, it was difficult to initially connect all of the endpoints. It was especially difficult to connect the Socket Server to the Browser Extension because of the constant need to listen to all activity from the Socket Server. Deploying the application using environental variables proved to be more challenging than expected because of the difficulties of the authentication procedures needed to authenticate the API. Additionally, there were a few hiccups when trying to retrieve and store from local storage during our front-end development process.
+Since there are so many moving parts in the reVision application, it was difficult to initially connect all of the endpoints. It was especially difficult to connect the Socket Server to the Browser Extension because of the constant need to listen to all activity from the Socket Server. Deploying the application using environmental variables proved to be more challenging than expected because of the difficulties of the authentication procedures needed to authenticate the API. Additionally, there were a few hiccups when trying to retrieve and store from local storage during our front-end development process.
 
 What we learned was that working together as a team was extremely important. Since all the parts of the application need to communicate together, it was also imperative that we communicated clearly and efficiently as a team. We were on Discord through the entirety of the hackathon, and we believe that it helped us to work better together.
 
@@ -61,7 +61,7 @@ We hope you enjoy the reVision.
 
 ## Future Goals
 
-reVision has a lot of potentials, and we think it's a great tool for students and adults looking to improve their note-taking skills. Not only is it a great note-taking tool, but it allows multiple users to take notes together in a collaborative environment through the use of the ID (roomId). 
+reVision has a lot of potential, and we think it's a great tool for students and adults looking to improve their note-taking skills. Not only is it a great note-taking tool, but it allows multiple users to take notes together in a collaborative environment through the use of the ID (roomId). 
 
 Ideally, we would like to eventually make it easier for different people to collaborate by allowing for multiple transcribed text uploads to be stored for a better user experience.
 
