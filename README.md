@@ -1,5 +1,9 @@
 # reVision Introduction
-https://nwhacks-2022-app.vercel.app/
+Application: https://nwhacks-2022-app.vercel.app/
+Figma: https://www.figma.com/file/Fpgz2H8knWSpZpsYdZ0m80/reVision-Prototype?node-id=0%3A1
+
+![Figma](https://user-images.githubusercontent.com/68607795/149671507-20bf9f02-41a9-4a58-af10-760c21376731.png)
+
 Imagine taking a picture of your notes or textbook and having that image available on your computer as typed text. It may sound too good to be true, but reVision can do exactly that.
 
 **reVision** is the ultimate note-taking application, and don't just take our word for it. McGill (https://www.mcgill.ca/oss/article/technology-general-science/pen-and-paper-versus-laptop-there-clear-winner-note-taking-olympics) mentions that when it comes down to comprehending concepts, users who used a pen to write down information generally performed better than their keyboard wielding counterparts. 
