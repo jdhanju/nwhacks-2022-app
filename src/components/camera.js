@@ -6,7 +6,6 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import Button from '@mui/material/Button';
 import postImage from '../requests/requests';
 import TextField from '@mui/material/TextField';
-import { set } from 'stylis';
 
 export default function Camera() {
 
