@@ -55,7 +55,6 @@ export default function Camera() {
 
     return(
         <div>
-            <span>{userID || ""}</span>
 
             <h5 className="font-semibold">Capture your image</h5>
 
