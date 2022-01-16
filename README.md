@@ -56,7 +56,7 @@ What we learned was that working together as a team was extremely important. Sin
 
 Despite all the challenges, we were able to create a functional application with 4 different parts (Front-end application, Processing API, Socket Server, and the Browser Extension) in a small team. 
 
-We hope you enjoy the reVision.
+We hope you enjoy using reVision.
 
 ## Future Goals
 
