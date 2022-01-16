@@ -1,3 +1,4 @@
+import sendSocketMessage from './socket'
 
 function getBase64(imageURL, callback){
     var imageString = '';
@@ -16,8 +17,9 @@ function getBase64(imageURL, callback){
     return imageString;
 }
 
-export default function postImage(imageURL, setloader){
-    console.log(imageURL);
+export default function postImage(imageURL, setloader, roomId, toggle){
+    console.log(roomId)
+    const socketServerUrl = "https://revisionsocketserver.herokuapp.com/";
 
     getBase64(imageURL, function(dataUrl) {
         // console.log('RESULT:', dataUrl)
@@ -25,6 +27,7 @@ export default function postImage(imageURL, setloader){
 
         //build JSON
         let serverData = {
+            "code": toggle === "code"? "code" : false,
             "image" : imageInBase64,
             "ext": "png"
         }
@@ -37,6 +40,9 @@ export default function postImage(imageURL, setloader){
             let data = JSON.parse(this.responseText);
             console.log(data);
             //setting the loading wheel state to false
+            //** */
+            sendSocketMessage(roomId, socketServerUrl, data.text)
+
             setloader(false);
         }
 

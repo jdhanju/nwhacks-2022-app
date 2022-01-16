@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 //camera.js is a component that handles everything related to the camera function
 import React, { useState, useEffect } from 'react';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
@@ -13,7 +14,7 @@ export default function Camera() {
     const [displayImagine, setDisplayImagine] = useState("");
     const [toggle, setToggle] = useState("");
     const [loader, setloader] = useState(false);
-    const [id, setID] = useState(false);
+    const [id, setID] = useState('');
 
     var input;
 
@@ -28,6 +29,7 @@ export default function Camera() {
 
     const handleIdInput = (e) => {
         input = e.value;
+        setID(input);
     }
 
     return(
@@ -72,8 +74,7 @@ export default function Camera() {
                         //if the text/code toggle isn't clicked then disable the submit button
                         <Button variant="text" onClick={() => {
                             switchLoader();
-                            setID(input);
-                            postImage(displayImagine, setloader);
+                            postImage(displayImagine, setloader, id, toggle);
                         }
                     }>Submit</Button>
 
